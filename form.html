@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="form.css" />
+    <style>
+    /* CSS for the label */
+    .date-label {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 5px;
+      font-size: 14px;
+      width: 150px; /* Adjust the width as needed */
+      text-align: center;
+    }
+    /* Hide the input fields */
+    #date,
+    #time {
+      
+    }
+    /* CSS for styling the combined date-time input field */
+    #date-time {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.2s ease-in-out;
+    }
+    /* Style the combined date-time input field when it's focused */
+    #date-time:focus {
+      outline: none;
+      border-color: #007BFF;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+  </style>
+  
+
+  <title>Browser</title>
+</head>
+
+<body>
+  <form action="mail.php" method="post" class="wrapper centered">
+    <article class="letter">
+      <div class="side">
+        <h1>Book Your Cab</h1><br>
+
+        <p>
+          <label for="name"></label>
+          <input type="text" name="name" placeholder="Your Name." class="disappear" id="name">
+        </p>
+
+        <p>
+          <label for="email"></label>
+          <input type="email" name="email" placeholder="Your email.." class="disappear" id="email">
+        </p>
+        <p>
+          <label for="contactno"></label>
+          <input type="text" name="contactno" placeholder="Your contact number.." class="disappear" id="contactno">
+        </p>
+        <p>
+            <label for="date">Date:</label>
+          
+          <input type="date" name="date" id="date" class="date-label"><br><br>
+        </p>
+
+        <p>
+            <label for="time">Time:</label>
+      
+          <input type="time" name="time" id="time" class="date-label"><br>
+        </p>
+
+        <p>
+          <input type="hidden" name="destination" id="destination" value="">
+        </p>
+      </div>
+      <div class="side">
+        <br><br><br><br><br><br>
+        <p>
+          <button id="sendLetter">Send</button>
+        </p>
+      </div>
+    </article>
+    <div class="envelope front"></div>
+    <div class="envelope back"></div>
+  </form>
+  <p class="result-message centered">Thank you for Booking<br>We will contact you within 1 hour</p>
+
+  <script src="form.js"></script>
+  <script>
+      var destination=document.getElementById('destination');
+      var d=localStorge.getItem('place');
+      destination.value=d;
+      localStorage.removeItem('place');
+  </script>
+ 
+</body>
+
+</html>

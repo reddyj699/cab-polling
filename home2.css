@@ -1,0 +1,426 @@
+
+@media (max-width: 767px) {
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+  
+  
+    .foricon{
+      padding-top: 60px;
+      
+  
+    }
+    .navigation{
+      
+      position:relative;
+      width: 100%;
+     
+      height:100%;
+      background:grey;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      
+    }
+    .navigation ul{
+      display:flex;
+      width: 350px;
+    }
+    .navigation ul li{
+      position:relative;
+      width:70px;
+      height:70px;
+      list-style:none;
+      z-index:1;
+    }
+    .navigation ul li a .icon{
+      position:relative;
+      display:block;
+      line-height:70px;
+      font-size:1.5em;
+      color:#fff;
+      transition:0.5s;
+    }
+    .navigation ul li a{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+  
+    }
+    .navigation ul li a .text{
+      position:absolute;
+      color:#fff;
+      font-size:.75em;
+      letter-spacing:0.05em;
+      font-weight:400;
+      transform:translateY(18px);
+      opacity:0;
+      transition:0.5s;
+    }
+    .navigation ul li.active a .icon{
+      transform:translateY(-33px);
+    }
+    .navigation ul li.active a .text{
+      opacity:1;
+    }
+
+    
+
+    .try1{
+      width: 30px;
+      height: 30px;
+      border-radius: 20px;
+    }
+    /*for search*/
+    #autofill-container {
+ 
+      
+      position: relative;
+  }
+  
+  #autofill-list {
+      position: absolute;
+      z-index: 1;
+      background-color: white;
+      border: 1px solid gray;
+      max-height: 100px;
+      overflow-y: auto;
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  #autofill-list li {
+      padding: 5px;
+      cursor: pointer;
+  }
+  .forfilter{
+      cursor: pointer;
+      border:0.5px solid black;
+      
+      padding: 10px 30px;
+      font-size: 1em;
+      font-weight: 500;
+      margin-top: 5px;
+      line-height: 0.05em;
+      background: none;
+     
+  }
+  .subdiv{
+      position: absolute;
+      top: 34%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+  }
+  
+    
+    .forfilter:focus {
+      box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    }
+    
+    .forfilter:hover {
+      box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+      transform: translateY(-2px);
+    }
+    
+    .forfilter:active {
+      box-shadow: #3c4fe0 0 3px 7px inset;
+      transform: translateY(2px);
+    }
+    #filterid{
+      cursor: pointer;
+    }
+    .forfilter{
+      background-color: yellow;
+      justify-content: center;
+      text-align: justify;
+      font-size: 0.5em;
+    }
+    .sorting{
+      visibility: hidden;
+      
+  }
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 100%;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .imagesearch{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+  }
+   
+  }
+  @media (min-width: 768px) {
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    .foricon .navigation .list.active .icon img {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  
+    }
+    .foricon{
+      padding-top: 60px;
+  
+    }
+    .navigation{
+      
+      position:relative;
+      width: 100%;
+     
+      height:100%;
+      background:grey;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      
+    }
+    .navigation ul{
+      display:flex;
+      width: 350px;
+    }
+    .navigation ul li{
+      position:relative;
+      width:70px;
+      height:70px;
+      list-style:none;
+      z-index:1;
+    }
+    .navigation ul li a .icon{
+      position:relative;
+      display:block;
+      line-height:70px;
+      font-size:1.5em;
+      color:#fff;
+      transition:0.5s;
+    }
+    .navigation ul li a{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+  
+    }
+    .navigation ul li a .text{
+      position:absolute;
+      color:#fff;
+      font-size:.75em;
+      letter-spacing:0.05em;
+      font-weight:400;
+      transform:translateY(18px);
+      opacity:0;
+      transition:0.5s;
+    }
+    .navigation ul li.active a .icon{
+      transform:translateY(-33px);
+    }
+    .navigation ul li.active a .text{
+      opacity:1;
+    }
+ 
+
+    .try1{
+      width: 30px;
+      height: 30px;
+      border-radius: 20px;
+    }
+    /* for search bar*/
+         #autofill-container {
+          position: relative;
+      }
+      
+      #autofill-list {
+          position: absolute;
+          z-index: 1;
+          background-color: white;
+          border: 1px solid gray;
+          max-height: 100px;
+          overflow-y: auto;
+          list-style-type: none;
+          padding: 0;
+      }
+      
+      #autofill-list li {
+          padding: 5px;
+          cursor: pointer;
+      }
+      .forfilter{
+          cursor: pointer;
+          border:0.5px solid black;
+          
+          padding: 10px 30px;
+          font-size: 1em;
+          font-weight: 500;
+          margin-top: 5px;
+          line-height: 0.05em;
+          background: none;
+         
+      }
+      .subdiv{
+          position: absolute;
+          top: 34%;
+          left: 85%;
+          transform: translate(-50%, -50%);
+          visibility: hidden;
+      }
+      
+        
+        .forfilter:focus {
+          box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        }
+        
+        .forfilter:hover {
+          box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+          transform: translateY(-2px);
+        }
+        
+        .forfilter:active {
+          box-shadow: #3c4fe0 0 3px 7px inset;
+          transform: translateY(2px);
+        }
+        #filterid{
+          cursor: pointer;
+        }
+        .forfilter{
+          background-color: yellow;
+          justify-content: center;
+          text-align: justify;
+          font-size: 0.5em;
+        }
+        .sorting{
+          visibility: hidden;
+          
+      }
+      .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+      
+      .searchTerm {
+        width: 100%;
+        border: 3px solid #00B4CC;
+        border-right: none;
+        padding: 5px;
+        height: 30px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9DBFAF;
+      }
+      
+      .searchTerm:focus{
+        color: #00B4CC;
+      }
+      
+      .searchButton {
+        width: 40px;
+        height: 30px;
+        border: 1px solid #00B4CC;
+        background: #00B4CC;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      
+      /*Resize the wrap to see the search bar change!*/
+      .wrap{
+        margin: 0;
+        padding: 0;
+      }
+      .wrap{
+        margin: 0;
+        width: 30%;
+        position: absolute;
+        top: 21%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+      }
+     .imagesearch{
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+     }
+  }
+          @font-face {
+     font-family: 'Rocher';
+     src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+   }   
+h1 {
+  font-family: 'Rocher';
+  padding-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+
+
+.mint {
+  font-palette: --Mint;
+}
